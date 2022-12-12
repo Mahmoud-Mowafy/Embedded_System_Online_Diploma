@@ -11,36 +11,36 @@ float calculator(float a, float b,char op);
 
 int main(void)
 {
-float x,y;
-char op;
-printf(Enter your numbers: );
-fflush(stdin);
-fflush(stdout);
-scanf(%f%f,&x,&y);
-printf(For math operations you can enter +,-,*,/: );
-fflush(stdin);
-fflush(stdout);
-scanf(%c,&op);
-printf(Result of your operation: %fn,calculator(x,y,op));
+	float x,y;
+	char op;
+	printf(Enter your numbers: );
+	fflush(stdin);
+	fflush(stdout);
+	scanf(%f%f,&x,&y);
+	printf(For math operations you can enter +,-,*,/: );
+	fflush(stdin);
+	fflush(stdout);
+	scanf(%c,&op);
+	printf(Result of your operation: %fn,calculator(x,y,op));
 }
 float calculator(float a, float b, char op)
 {
-float result ;
-switch(op)
-{
-case '+':
-result = a+b;
-break;
-case '-':
-result = a-b;
-break;
-case '*':
-result = a*b;
-break;
-case '/':
-result = a/b;
-break;
-}
-return result;
+	float result ;
+	switch(op)
+	{
+	case '+':
+	   result = a+b;
+	break;
+	case '-':
+	   result = a-b;
+	break;
+	case '*':
+	   result = a*b;
+	break;
+	case '/':
+	   result = a/b;
+	break;
+	}
+	return result;
 }
 

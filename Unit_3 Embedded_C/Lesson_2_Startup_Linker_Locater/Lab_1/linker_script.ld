@@ -16,7 +16,7 @@ SECTIONS
 	.startup :
 	{
 		startup.o(.text)
-	}
+	}>Mem
 	.text :
 	{
 		*(.text) *(.rodata)

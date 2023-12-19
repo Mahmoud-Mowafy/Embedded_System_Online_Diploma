@@ -1,0 +1,34 @@
+/*
+	File: Linker_Script
+	Auther: Mahmoud Mowafey 
+*/
+
+ENTRY(reset)
+
+MEMORY
+{
+	Mem (rwx):ORIGIN = 0x00000000 ,LENGTH = 64M
+}	
+
+SECTIONS
+{
+	. = 0x10000;
+	.startup :
+	{
+		startup.o(.text)
+	}
+	.text :
+	{
+		*(.text) *(.rodata)
+	}>Mem
+	.data :
+	{
+		*(.data)
+	}>Mem
+	.bss :
+	{
+		*(.bss) *(COMMON)
+	}>Mem
+	. = . + 0x1000;  /*4KB of stack memory*/
+	stack_top = .;
+}

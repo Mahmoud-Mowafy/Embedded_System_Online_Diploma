@@ -4,7 +4,6 @@ Date: 12_Oct_2024
 File: linker_script.ld 
 */
 
-
 /* Memory Layout Description */
 MEMORY {
     flash(RX) : ORIGIN = 0X08000000, LENGTH = 128k

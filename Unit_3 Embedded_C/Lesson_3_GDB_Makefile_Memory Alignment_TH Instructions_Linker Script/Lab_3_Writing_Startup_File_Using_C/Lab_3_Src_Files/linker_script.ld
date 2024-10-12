@@ -1,6 +1,6 @@
 /*
 @auther: Mahmoud Mowafey
-Date: 09_Oct_2024
+Date: 12_Oct_2024
 File: linker_script.ld 
 */
 
